@@ -8,8 +8,3 @@ pub enum Scope{
 
 pub type PluginScope = Vec<Scope>;
 
-pub struct Plugin {
-    name: String,
-    uuid: u64,
-    scope: PluginScope
-}
