@@ -1,6 +1,7 @@
-use std::fmt;
 
+#[derive(Debug, Clone, Default)]
 pub enum Scope{
+    #[default]
     Widget,
     Connector,
     Process
