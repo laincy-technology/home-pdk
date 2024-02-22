@@ -1,8 +1,10 @@
 pub mod types;
 
-#[derive(Debug, Clone, Default)]
+use serde::{Deserialize, Serialize};
+
+#[derive(Debug, Clone, Default, Deserialize, Serialize)]
 pub struct Plugin {
-    name: String,
-    uuid: u64,
-    scope: types::PluginScope
+    pub name: String,
+    pub uuid: u64,
+    pub scope: types::PluginScope
 }
